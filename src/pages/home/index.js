@@ -42,21 +42,21 @@ const Home = () => {
                                 </Link>
                             </S.ListItem>
                             <S.ListItem>
-                                <Link style={{ textDecoration: 'none' }} to="/Personagens">
+                                <Link style={{ textDecoration: 'none' }} to="/characters">
                                     <S.LinkItem >
                                         Personagens
                                     </S.LinkItem>
                                 </Link>
                             </S.ListItem>
                             <S.ListItem>
-                                <Link style={{ textDecoration: 'none' }} to="/Personagens">
+                                <Link style={{ textDecoration: 'none' }} to="/spells">
                                     <S.LinkItem>
-                                        Personagens
+                                        Feitiços
                                     </S.LinkItem>
                                 </Link>
                             </S.ListItem>
                             <S.ListItem>
-                                <Link style={{ textDecoration: 'none' }} to="/Informações">
+                                <Link style={{ textDecoration: 'none' }} to="/infos">
                                     <S.LinkItem>
                                         Informações
                                     </S.LinkItem>

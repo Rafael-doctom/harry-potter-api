@@ -1,4 +1,10 @@
 import { useEffect, useState } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
 
 import * as S from './style.js'
 
@@ -29,16 +35,32 @@ const Home = () => {
                     <S.Menu>
                         <S.List>
                             <S.ListItem>
-                                Livros
+                                <Link style={{ textDecoration: 'none' }} to="/books">
+                                    <S.LinkItem>
+                                        Livros
+                                    </S.LinkItem>
+                                </Link>
                             </S.ListItem>
                             <S.ListItem>
-                                Personagens
+                                <Link style={{ textDecoration: 'none' }} to="/Personagens">
+                                    <S.LinkItem >
+                                        Personagens
+                                    </S.LinkItem>
+                                </Link>
                             </S.ListItem>
                             <S.ListItem>
-                                Feitiços
+                                <Link style={{ textDecoration: 'none' }} to="/Personagens">
+                                    <S.LinkItem>
+                                        Personagens
+                                    </S.LinkItem>
+                                </Link>
                             </S.ListItem>
                             <S.ListItem>
-                                Informações
+                                <Link style={{ textDecoration: 'none' }} to="/Informações">
+                                    <S.LinkItem>
+                                        Informações
+                                    </S.LinkItem>
+                                </Link>
                             </S.ListItem>
                         </S.List>
                     </S.Menu>

@@ -35,11 +35,22 @@ export const ListItem = styled.li`
     margin:0 1rem;
     cursor:pointer;
     font-weight:600;
+    color:white;
+    &:hover{
+        color:red;
+        transition:1s;
+    }
+`
+
+export const LinkItem = styled.span`
+    font-weight:600;
+    color:white;
 
     &:hover{
         color:red;
         transition:1s;
     }
+
 `
 
 // main
@@ -72,4 +83,9 @@ export const ImagePersonagem = styled.img`
     border:0;
     border-radius:10px;
     cursor:pointer;
+
+    &:hover{
+        box-shadow: -5px 5px 20px #FF8000;
+        transition:0.55s;
+    }
 `

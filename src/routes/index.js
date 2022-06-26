@@ -7,6 +7,9 @@ import {
 
 import Books from "../pages/books";
 import Home from "../pages/home";
+import Characters from "../pages/characters";
+import Infos from "../pages/infos";
+import Spells from "../pages/spells";
 
 const RouteNavigation = () => {
     return (
@@ -15,6 +18,11 @@ const RouteNavigation = () => {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/books" element={<Books />} />
+                    <Route exact path="/characters" element={<Characters />} />
+                    <Route exact path="/spells" element={<Spells />} />
+                    <Route exact path="/infos" element={<Infos />} />
+
+
                 </Routes>
             </Router>
         </>

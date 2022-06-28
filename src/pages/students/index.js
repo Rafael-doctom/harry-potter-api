@@ -6,7 +6,6 @@ import * as S from './style.js';
 const Students = () => {
 
     const [dataStudents, setDataStudents] = useState([]);
-    // const [searchData, setDataSearch] = useState('');
     const [inputValue, setInputValue] = useState('');
 
     const URL = `http://hp-api.herokuapp.com/api/characters/students`;
@@ -17,10 +16,9 @@ const Students = () => {
             .then(response => response.json())
             .then(json => {
                 setDataStudents(json)
-                console.log(dataStudents[0].name)
             })
             .catch((mesage) => { console.log(mesage) })
-    }, [])
+    }, []);
 
     const changeDataSearch = (event) => {
         event.preventDefault();
@@ -38,7 +36,7 @@ const Students = () => {
             } else {
                 divStudents[i].style.display = "block";
             }
-        }
+        };
     };
 
     return (

@@ -8,11 +8,13 @@ const Home = () => {
 
     const [data, setData] = useState([]);
 
-    const URL = `http://hp-api.herokuapp.com/api/characters`;
 
     const defaultImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRleKTGZ3asGHBqoap1YPeldfLJ9Iwk8ZN7prhoOh0Fo6hv8_JoSXxFwIbu_cEYlO8HtG4&usqp=CAU"
 
     useEffect(() => {
+        
+        const URL = `http://hp-api.herokuapp.com/api/characters`;
+
         fetch(URL)
             .then(response => response.json())
             .then(json => {

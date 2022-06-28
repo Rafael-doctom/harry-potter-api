@@ -55,7 +55,7 @@ const Students = () => {
                             dataStudents.map(student => (
                                 <>
                                     <S.Actor className='divStudents'>
-                                        <S.ImagePersonagem src={student.image != '' ? student.image : defaultImg} alt={student.name} />
+                                        <S.ImagePersonagem src={student.image !== '' ? student.image : defaultImg} alt={student.name} />
                                         <p>{student.name}</p>
                                     </S.Actor>
                                 </>

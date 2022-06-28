@@ -42,7 +42,7 @@ const Infos = () => {
 
             <S.Modals >
                 {
-                    modal1 != false ? (
+                    modal1 !== false ? (
                         <>
                             Gryffindor
                         </>
@@ -50,7 +50,7 @@ const Infos = () => {
                 }
 
                 {
-                    modal2 != false ? (
+                    modal2  !== false ? (
                         <>
                             corvinal
                         </>
@@ -58,7 +58,7 @@ const Infos = () => {
                 }
 
                 {
-                    modal3 != false ? (
+                    modal3  !== false ? (
                         <>
                             lufa-lufa
                         </>
@@ -66,7 +66,7 @@ const Infos = () => {
                 }
 
                 {
-                    modal4 != false ? (
+                    modal4  !== false ? (
                         <>
 
                             Slytherin

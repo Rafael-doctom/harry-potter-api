@@ -1,11 +1,5 @@
 import { useEffect, useState } from 'react';
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
 
 import Header from '../../components/header/index.js';
 import * as S from './style.js';
@@ -40,7 +34,7 @@ const Home = () => {
                                 data.map(item => (
                                     <>
                                         <S.Actor>
-                                            <S.ImagePersonagem src={item.image != '' ? item.image : defaultImg} alt={item.name} />
+                                            <S.ImagePersonagem src={item.image !== '' ? item.image : defaultImg} alt={item.name} />
                                             <p>{item.name}</p>
                                         </S.Actor>
                                     </>

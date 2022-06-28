@@ -6,8 +6,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: Open-Sans, Helvetica, Sans-Serif;
     background-image: url("https://images7.alphacoders.com/556/556260.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
+    background-repeat: repeat-y;
+    // background-size:cover;
   }
 `;
  

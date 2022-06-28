@@ -1,6 +1,6 @@
 import Header from "../../components/header";
 
-const Spells = () => {
+const Students = () => {
     return(
         <>
                 <Header />
@@ -8,4 +8,4 @@ const Spells = () => {
     )
 }
 
-export default Spells;
+export default Students;

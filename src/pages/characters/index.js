@@ -1,7 +1,9 @@
+import Header from "../../components/header";
+
 const Characters = () => {
     return(
         <>
-            em desenvolvimento...
+                <Header />
         </>
     )
 }

@@ -12,7 +12,7 @@ const Students = () => {
 
     useEffect(() => {
 
-        const URL = `http://hp-api.herokuapp.com/api/characters/students`;
+        const URL = `https://hp-api.herokuapp.com/api/characters/students`;
 
         fetch(URL)
             .then(response => response.json())

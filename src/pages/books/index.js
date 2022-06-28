@@ -1,7 +1,9 @@
+import Header from "../../components/header";
+
 const Books = () => {
     return(
         <>
-            books
+                <Header />
         </>
     )
 };

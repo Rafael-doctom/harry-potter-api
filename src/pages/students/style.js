@@ -1,19 +1,39 @@
 import styled from "styled-components";
 
-export const Main = styled.main`
-    height:100%;
+export const Content = styled.div`
+    width:95vw;
+    margin:0 auto;
 `
 
-export const Content = styled.div`
+export const Input = styled.input`
+    width:93vw;
+    background:white;
+    height:5vh;
+    border:1px solid transparent;
+    border-radius:5px;
+    font-family: Poppins-Medium;
+    font-size: 1rem;
+    color: #666666;
+    display: block;
+    padding:0 1rem;
+
+    &:focus{
+        outline:none;
+    }
+`
+
+export const Main = styled.main`
+    padding:1rem 0;
     width:90vw;
     margin:1rem auto;
 `
 
-export const Cards = styled.div`
+export const CardsStudents = styled.div`
     display:flex;
+
 `
 
-export const ImageCard = styled.div`
+export const ImageCardSudents = styled.div`
     display:flex;
     flex-wrap:wrap;
     justify-content:center;

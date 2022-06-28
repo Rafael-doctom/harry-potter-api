@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import {
     BrowserRouter as Router,
     Switch,
@@ -6,13 +7,16 @@ import {
     Link
 } from "react-router-dom";
 
-import * as S from './style.js'
+import Header from '../../components/header/index.js';
+import * as S from './style.js';
 
 const Home = () => {
 
     const [data, setData] = useState([]);
 
-    const URL = `https://fedeperin-harry-potter-api.herokuapp.com/personajes`
+    const URL = `http://hp-api.herokuapp.com/api/characters`;
+
+    const defaultImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRleKTGZ3asGHBqoap1YPeldfLJ9Iwk8ZN7prhoOh0Fo6hv8_JoSXxFwIbu_cEYlO8HtG4&usqp=CAU"
 
     useEffect(() => {
         fetch(URL)
@@ -23,62 +27,22 @@ const Home = () => {
             .catch(() => {
                 console.log('aaaaaaaaa')
             });
-
-    }, [])
-
+    }, []);
 
     return (
         <>
-            <S.Header>
-                <S.Nav>
-                    <S.Logo src="./assets/logo.png" alt="logo" />
-                    <S.Menu>
-                        <S.List>
-                            <S.ListItem>
-                                <Link style={{ textDecoration: 'none' }} to="/books">
-                                    <S.LinkItem>
-                                        Livros
-                                    </S.LinkItem>
-                                </Link>
-                            </S.ListItem>
-                            <S.ListItem>
-                                <Link style={{ textDecoration: 'none' }} to="/characters">
-                                    <S.LinkItem >
-                                        Personagens
-                                    </S.LinkItem>
-                                </Link>
-                            </S.ListItem>
-                            <S.ListItem>
-                                <Link style={{ textDecoration: 'none' }} to="/spells">
-                                    <S.LinkItem>
-                                        Feitiços
-                                    </S.LinkItem>
-                                </Link>
-                            </S.ListItem>
-                            <S.ListItem>
-                                <Link style={{ textDecoration: 'none' }} to="/infos">
-                                    <S.LinkItem>
-                                        Informações
-                                    </S.LinkItem>
-                                </Link>
-                            </S.ListItem>
-                        </S.List>
-                    </S.Menu>
-                </S.Nav>
-
-            </S.Header>
-
+            <Header />
             <S.Main>
-
                 <S.Content>
                     <S.Cards>
                         <S.ImageCard>
                             {data &&
                                 data.map(item => (
                                     <>
-
-                                        <S.ImagePersonagem src={item.imagen} alt="logo" />
-
+                                        <S.Actor>
+                                            <S.ImagePersonagem src={item.image != '' ? item.image : defaultImg} alt={item.name} />
+                                            <p>{item.name}</p>
+                                        </S.Actor>
                                     </>
                                 ))
                             }
@@ -86,7 +50,6 @@ const Home = () => {
                     </S.Cards>
                 </S.Content>
             </S.Main>
-
         </>
     )
 };

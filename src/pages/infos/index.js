@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 
 import Header from "../../components/header";
 import * as S from './style.js';

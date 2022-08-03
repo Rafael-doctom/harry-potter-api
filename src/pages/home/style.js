@@ -2,11 +2,22 @@ import styled from "styled-components";
 
 export const Main = styled.main`
     height:100%;
+
 `
 
 export const Content = styled.div`
     width:90vw;
     margin:1rem auto;
+  
+
+    @media (max-width:425px){
+        width:95vw;
+    }
+
+    @media (max-width:375px){
+        width:98vw;
+    }
+    
 `
 
 export const Cards = styled.div`
@@ -20,6 +31,7 @@ export const ImageCard = styled.div`
     align-item:center;
     align-self: stretch;
     text-align:center;
+
 `
 
 export const ImagePersonagem = styled.img`
@@ -36,6 +48,20 @@ export const ImagePersonagem = styled.img`
         box-shadow: -5px 5px 20px #FF8000;
         transition:0.55s;
     }
+
+  
+
+    @media (max-width:768px){
+        height:35vh;
+        max-height:35vh;
+        width:20vw;
+    }
+
+    @media (max-width:425px){
+        height:35vh;
+        max-height:35vh;
+        width:27vw;
+    }
 `
 
 export const Actor = styled.div`
@@ -44,4 +70,10 @@ export const Actor = styled.div`
    font-weight:600;
    border-bottom:5px solid #D4D0D0;
    font-size:1.45rem;
+
+
+   @media (max-width:768px){
+    margin: 0rem 0.55rem;
+    font-size:0.55rem;
+    }
 `

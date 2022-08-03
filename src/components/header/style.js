@@ -5,12 +5,20 @@ export const Nav = styled.nav`
     flex-direction:column;
     width:95vw;
     margin:0 auto;
+
+   
 `
 
 export const Logo = styled.img`
     height:7vh;
     width:7vw;
     margin:2rem auto;
+
+    @media (max-width:425px){
+        height:10vh;
+        width:20vw;
+        margin:1rem auto;
+    }
 `
 
 export const Menu = styled.div`
@@ -19,6 +27,10 @@ export const Menu = styled.div`
     text-align:center;
     display:flex;
     justify-content:center;
+
+    @media (max-width:375px){
+        width:85vw;
+    }
 `
 
 export const List = styled.ul`
@@ -36,6 +48,10 @@ export const ListItem = styled.li`
     &:hover{
         color:red;
         transition:1s;
+    }
+
+    @media (max-width:425px){
+        font-size:1rem;
     }
 `
 

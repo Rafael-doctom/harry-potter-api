@@ -12,13 +12,6 @@ const Header = () => {
                 <S.Menu>
                     <S.List>
                         <S.ListItem>
-                            <Link style={{ textDecoration: 'none' }} to="/books">
-                                <S.LinkItem>
-                                    Livros
-                                </S.LinkItem>
-                            </Link>
-                        </S.ListItem>
-                        <S.ListItem>
                             <Link style={{ textDecoration: 'none' }} to="/">
                                 <S.LinkItem >
                                     Personagens

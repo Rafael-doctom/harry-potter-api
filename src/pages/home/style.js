@@ -11,7 +11,8 @@ export const Content = styled.div`
   
 
     @media (max-width:425px){
-        width:95vw;
+        width:93vw;
+        background:red;
     }
 
     @media (max-width:375px){
@@ -61,9 +62,9 @@ export const ImagePersonagem = styled.img`
     }
 
     @media (max-width:425px){
-        height:35vh;
-        max-height:35vh;
-        width:30vw;
+        height:30vh;
+        max-height:30vh;
+        width:25vw;
     }
     @media (max-width:375px){
         height:33vh;

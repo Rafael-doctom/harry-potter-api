@@ -32,6 +32,10 @@ export const ImageCard = styled.div`
     align-self: stretch;
     text-align:center;
 
+    @media (max-width:375px){
+        justify-content:center;
+    }
+
 `
 
 export const ImagePersonagem = styled.img`
@@ -49,7 +53,6 @@ export const ImagePersonagem = styled.img`
         transition:0.55s;
     }
 
-  
 
     @media (max-width:768px){
         height:35vh;
@@ -60,7 +63,12 @@ export const ImagePersonagem = styled.img`
     @media (max-width:425px){
         height:35vh;
         max-height:35vh;
-        width:27vw;
+        width:30vw;
+    }
+    @media (max-width:375px){
+        height:33vh;
+        max-height:33vh;
+        width:30vw;
     }
 `
 
@@ -76,4 +84,9 @@ export const Actor = styled.div`
     margin: 0rem 0.55rem;
     font-size:0.55rem;
     }
+
+    @media (max-width:375px){
+        margin: 0rem 0.30rem;
+        font-size:0.45rem;
+        }
 `

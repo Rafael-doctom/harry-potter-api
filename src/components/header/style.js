@@ -28,8 +28,13 @@ export const Menu = styled.div`
     display:flex;
     justify-content:center;
 
+    @media (max-width:425px){
+        width:90vw;
+    }
+
     @media (max-width:375px){
-        width:85vw;
+        width:86vw;
+
     }
 `
 
@@ -52,6 +57,10 @@ export const ListItem = styled.li`
 
     @media (max-width:425px){
         font-size:1rem;
+    }
+
+    @media (max-width:375px){
+        font-size:0.80rem;
     }
 `
 

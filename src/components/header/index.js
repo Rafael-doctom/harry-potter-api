@@ -26,13 +26,6 @@ const Header = () => {
                             </Link>
                         </S.ListItem>
                         <S.ListItem>
-                            <Link style={{ textDecoration: 'none' }} to="/spells">
-                                <S.LinkItem>
-                                    Feitiços
-                                </S.LinkItem>
-                            </Link>
-                        </S.ListItem>
-                        <S.ListItem>
                             <Link style={{ textDecoration: 'none' }} to="/students">
                                 <S.LinkItem >
                                     Estudantes
